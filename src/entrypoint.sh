@@ -10,7 +10,8 @@ if [ -z "$RELAYS" ]; then
   exit 1
 fi
 
-exec /app/mev-boost -goerli \
+exec /app/mev-boost -addr 0.0.0.0:18550 \
+  -goerli \
   -relay-check \
   -relays ${RELAYS} \
   ${EXTRA_OPTS}
