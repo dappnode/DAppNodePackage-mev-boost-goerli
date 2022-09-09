@@ -23,5 +23,8 @@
     "type": "git",
     "url": "https://github.com/Nabsku/DAppNodePackage-mev-boost"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.58"
+  }
 }
