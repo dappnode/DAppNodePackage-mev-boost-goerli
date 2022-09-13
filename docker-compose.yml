@@ -4,11 +4,12 @@ services:
     build:
       context: src
       args:
-        UPSTREAM_VERSION: v0.8.2
+        UPSTREAM_VERSION: v1.2.0
     volumes:
       - "data:/var/lib/mev-boost"
     environment:
-      RELAYS: "https://0xafa4c6985aa049fb79dd37010438cfebeb0f2bd42b115b89dd678dab0670c1de38da0c4e9138c9290a398ecd9a0b3110@builder-relay-goerli.flashbots.net"
+      RELAYS: >-
+        https://0xafa4c6985aa049fb79dd37010438cfebeb0f2bd42b115b89dd678dab0670c1de38da0c4e9138c9290a398ecd9a0b3110@builder-relay-goerli.flashbots.net
       EXTRA_OPTS: ""
     image: "mev-boost.mev-boost-goerli.dnp.dappnode.eth:0.1.0"
     restart: unless-stopped
