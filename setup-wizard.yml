@@ -4,7 +4,7 @@ fields:
     target:
       type: environment
       name: RELAYS
-      service: MEV-BOOST
+      service: mev-boost
     title: RELAYS
     description: >-
       The mev-boost relay is a trusted mediator between block producers and block builders. It enables all Ethereum proof-of-stake validators to offer their blockspace to not just Flashbots but other builders as well. This opens up the market to more builders and creates competition between them, leading to more revenue and choice for validators, and better censorship-resistance for Ethereum.
